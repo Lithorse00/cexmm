@@ -1,0 +1,5 @@
+{
+  "name": "CEX Market Maker Pro",
+  "description": "Professional high-frequency market making and liquidity management tool for centralized exchanges (Binance, OKX, Bybit, etc.).",
+  "requestFramePermissions": []
+}

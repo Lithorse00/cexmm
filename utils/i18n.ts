@@ -1,0 +1,452 @@
+
+
+import { Language } from '../types';
+
+export const translations = {
+  en: {
+    // Auth
+    loginTitle: "MarketMaker Pro",
+    loginSubtitle: "Quantitative Trading System",
+    account: "Account",
+    password: "Password",
+    googleCode: "Google 2FA Code",
+    loginBtn: "Login to System",
+    loginError: "Please fill in all fields",
+
+    // Sidebar Groups
+    main: "Main",
+    acctMgmt: "Account Mgmt",
+    tradeMgmt: "Trading",
+    dataMon: "Data & Monitor",
+    system: "System",
+
+    // Sidebar Items
+    dashboard: "Dashboard",
+    loginAccounts: "Login Accounts",
+    mmAccounts: "MM Accounts",
+    permissions: "Permissions",
+    
+    klineMgmt: "K-Line Mgmt",
+    depthMgmt: "Order Book Mgmt",
+    washMgmt: "Wash Trade Mgmt",
+    
+    market: "Market Center",
+    alerts: "Alerts & Logs",
+    settings: "Settings",
+    logout: "Logout",
+    collapse: "Collapse Sidebar",
+    
+    // Topbar
+    serverTime: "Server Time",
+    marketCenterRealtime: "Market Center (Real-time)",
+    
+    // Dashboard
+    totalAssets: "Total Assets (Est.)",
+    activeStrategies: "Active Strategies",
+    vol24h: "24h Volume",
+    systemAlerts: "System Alerts",
+    vsYesterday: "vs yesterday",
+    paused: "Paused",
+    highActivity: "High Activity",
+    checkLogs: "Check logs",
+    volumePnl: "Volume & PnL Analytics",
+    systemLogs: "System Logs",
+    activeStrategyPerf: "Active Strategy Performance",
+    strategy: "Strategy",
+    pair: "Pair",
+    uptime: "Uptime",
+    trades24h: "Trades (24h)",
+    status: "Status",
+    running: "Running",
+    stopped: "Stop",
+
+    // Accounts
+    accountMgmt: "Account Management",
+    accountMgmtDesc: "Manage system logins, exchange API keys, and operational permissions.",
+    addAccount: "Add Account",
+    accountName: "Account Name",
+    exchange: "Exchange",
+    role: "Role",
+    apiKey: "API Key",
+    balance: "Balance (Est.)",
+    actions: "Actions",
+    editAccount: "Edit Account",
+    addNewAccount: "Add New Account",
+    saveConfig: "Save Configuration",
+    cancel: "Cancel",
+    securityWarning: "Security Warning",
+    securityDesc: "API Secrets are only entered once and never displayed again. Ensure IP Whitelisting is enabled on the exchange.",
+    apiSecret: "API Secret",
+    passphrase: "Passphrase",
+    
+    // Login Account Specific
+    googleSecret: "Google Secret",
+    createTime: "Create Time",
+    loginTime: "Last Login",
+    normal: "Normal",
+    forbidden: "Forbidden",
+    batchDelete: "Batch Delete",
+    resetSecret: "Reset Secret",
+    resetSecretTip: "Clear field to reset",
+    confirmDelete: "Confirm Delete",
+    confirmDeleteMsg: "Are you sure you want to delete the selected items?",
+    opSuccess: "Operation Successful",
+    createSuccess: "Creation Successful",
+    deleteSuccess: "Delete Successful",
+    startDate: "Start Date",
+    endDate: "End Date",
+    selectAccountTip: "Please select an account",
+    deleteNormalError: "Normal status account cannot be deleted",
+    fillRequired: "Please fill in all required fields",
+    
+    // MM Account Specific
+    uid: "UID",
+    transactionType: "Trans. Type",
+    tradingPairs: "Trading Pairs",
+    partition: "Partition",
+    leverage: "Leverage",
+    modificationTime: "Mod. Time",
+    ipWhitelist: "IP Whitelist",
+    spot: "Spot",
+    contract: "Contract",
+    margin: "Margin",
+    perpetual: "Perpetual",
+    delivery: "Delivery",
+    option: "Option",
+    
+    // Permissions Specific
+    roleList: "Role List",
+    createRole: "Create Role",
+    roleName: "Role Name",
+    roleDesc: "Description",
+    partitionAccess: "Partition Access",
+    moduleAccess: "Module Access",
+    exchangeAccess: "Exchange Access",
+    transTypeAccess: "Trans. Type Access",
+    selectPartitions: "Select accessible partitions for this role",
+    selectModules: "Select accessible modules for this role",
+    selectExchanges: "Select accessible exchanges",
+    selectTransTypes: "Select accessible transaction types",
+    saveRole: "Save Role",
+    deleteRole: "Delete Role",
+    
+    // Search & Pagination
+    search: "Search",
+    reset: "Reset",
+    prevPage: "Prev",
+    nextPage: "Next",
+    totalItems: "Total",
+    page: "Page",
+    
+    // Sub-Account Tabs
+    tabLoginAccts: "Login Users",
+    tabMMAccts: "Exchange API Accounts",
+    tabPerms: "Permissions",
+
+    // Strategies
+    strategyEngine: "Trading Strategy",
+    strategyDesc: "Configure K-Line, Order Book Depth, and Wash Trading strategies.",
+    createStrategy: "Create Strategy",
+    deployStrategy: "Deploy New Strategy",
+    deploy: "Deploy",
+    strategyModule: "Strategy Module",
+    tradingPair: "Trading Pair",
+    paramsConfig: "Parameters Configuration",
+    start: "Start",
+    stop: "Stop",
+
+    // K-Line Sub Modules
+    randomMode: "Random Mode",
+    followMode: "Follow Mode",
+    orderBookMode: "Order Book Mode",
+    priceBoundary: "Price Boundary",
+    fundingRate: "Funding Rate",
+    crossExchange: "Cross Exchange",
+
+    // Random Mode Fields
+    taskId: "Task ID",
+    account1: "Account 1",
+    account2: "Account 2",
+    makerPrice: "Maker Price",
+    minMakerPrice: "Min Maker Price",
+    maxMakerPrice: "Max Maker Price",
+    volatility: "Volatility",
+    maxQty: "Max Qty",
+    minQty: "Min Qty",
+    qtyRange: "Qty Range",
+    qtyChangePeriod: "Qty Change Period",
+    maxOrderInterval: "Max Order Interval (s)",
+    minOrderInterval: "Min Order Interval (s)",
+    orderQty: "Order Qty",
+    orderInterval: "Order Interval",
+    makerPriceRange: "Maker Price",
+    orderStatus: "Order Status",
+
+    // Follow Mode Fields
+    followExchange: "Follow Exchange",
+    followPair: "Follow Pair",
+    followType: "Follow Type",
+    weightRatio: "Weight Ratio",
+    followChangePeriod: "Follow Change Period",
+    weightError: "Total weights must sum to 1",
+    
+    // Price Boundary Fields
+    floatingValue: "Floating Value",
+
+    // Market
+    orderBook: "Order Book",
+    manualTrade: "Manual Trade",
+    bidSide: "Bid Side",
+    askSide: "Ask Side",
+    total: "Total",
+    amt: "Amt",
+    bidPrice: "Bid Price",
+    askPrice: "Ask Price",
+    buyLimit: "Buy Limit",
+    sellLimit: "Sell Limit",
+    avail: "Avail",
+    wallet: "Wallet",
+    priceUSDT: "Price (USDT)",
+    amountBTC: "Amount (BTC)",
+    buy: "Buy",
+    sell: "Sell",
+    quickAction: "Quick Action",
+    cancelBids: "Cancel All Bids",
+    cancelAsks: "Cancel All Asks",
+    panicSell: "Panic Sell (Close Position)",
+    connected: "Connected",
+    
+    // Alerts
+    logMonitor: "Real-time Monitoring",
+    logMonitorDesc: "System logs, execution errors, and risk alerts.",
+    clearLogs: "Clear Logs",
+    level: "Level",
+    message: "Message",
+    time: "Time"
+  },
+  zh: {
+    // Auth
+    loginTitle: "CEX做市工具",
+    loginSubtitle: "专业量化交易系统",
+    account: "账号",
+    password: "密码",
+    googleCode: "谷歌验证码",
+    loginBtn: "登录系统",
+    loginError: "请填写所有字段",
+
+    // Sidebar Groups
+    main: "主要",
+    acctMgmt: "账户管理",
+    tradeMgmt: "交易管理",
+    dataMon: "数据监控",
+    system: "系统设置",
+
+    // Sidebar Items
+    dashboard: "仪表盘",
+    loginAccounts: "登录账号管理",
+    mmAccounts: "做市账号管理",
+    permissions: "权限分配管理",
+    
+    klineMgmt: "K线管理",
+    depthMgmt: "盘口管理",
+    washMgmt: "非自成交管理",
+    
+    market: "市场中心",
+    alerts: "报警日志",
+    settings: "系统设置",
+    logout: "退出登录",
+    collapse: "收起侧边栏",
+    
+    // Topbar
+    serverTime: "服务器时间",
+    marketCenterRealtime: "市场中心 (实时)",
+
+    // Dashboard
+    totalAssets: "总资产 (预估)",
+    activeStrategies: "运行中策略",
+    vol24h: "24小时交易量",
+    systemAlerts: "系统报警",
+    vsYesterday: "同比昨日",
+    paused: "已暂停",
+    highActivity: "高活跃度",
+    checkLogs: "查看日志",
+    volumePnl: "交易量与盈亏分析",
+    systemLogs: "系统日志",
+    activeStrategyPerf: "策略运行表现",
+    strategy: "策略名称",
+    pair: "交易对",
+    uptime: "运行时间",
+    trades24h: "24H成交数",
+    status: "状态",
+    running: "运行中",
+    stopped: "停止",
+
+    // Accounts
+    accountMgmt: "账户管理体系",
+    accountMgmtDesc: "管理系统登录用户、交易所做市API账户以及操作权限分配。",
+    addAccount: "添加账号",
+    accountName: "账户名称",
+    exchange: "交易所",
+    role: "角色",
+    apiKey: "API密钥",
+    balance: "余额 (预估)",
+    actions: "操作",
+    editAccount: "编辑账户",
+    addNewAccount: "添加新账户",
+    saveConfig: "保存配置",
+    cancel: "取消",
+    securityWarning: "安全隔离",
+    securityDesc: "API密钥仅在输入时保存。请确保交易所开启了IP白名单。非管理员不可操作。",
+    apiSecret: "Scertkey",
+    passphrase: "Api密码 (选填)",
+
+    // Login Account Specific
+    googleSecret: "谷歌密钥",
+    createTime: "创建时间",
+    loginTime: "登录时间",
+    normal: "正常",
+    forbidden: "禁止",
+    batchDelete: "批量删除",
+    resetSecret: "重置密钥",
+    resetSecretTip: "清空输入框以重置密钥",
+    confirmDelete: "确认删除",
+    confirmDeleteMsg: "您确定要删除选中的项吗？",
+    opSuccess: "操作成功",
+    createSuccess: "创建成功",
+    deleteSuccess: "删除成功",
+    startDate: "开始日期",
+    endDate: "结束日期",
+    selectAccountTip: "请选择账号",
+    deleteNormalError: "正常状态账号不可删除",
+    fillRequired: "请填写所有必填项",
+    
+    // MM Account Specific
+    uid: "UID",
+    transactionType: "交易类型",
+    tradingPairs: "交易对",
+    partition: "分区",
+    leverage: "杠杆倍数",
+    modificationTime: "修改时间",
+    ipWhitelist: "IP白名单",
+    spot: "现货",
+    contract: "合约",
+    margin: "杠杆",
+    perpetual: "永续合约",
+    delivery: "交割合约",
+    option: "期权",
+
+    // Permissions Specific
+    roleList: "角色列表",
+    createRole: "创建角色",
+    roleName: "角色名称",
+    roleDesc: "描述",
+    partitionAccess: "分区权限分配",
+    moduleAccess: "模块操作权限分配",
+    exchangeAccess: "交易所权限",
+    transTypeAccess: "交易类型权限",
+    selectPartitions: "勾选该角色可操作的做市账号分区",
+    selectModules: "勾选该角色可访问的功能模块",
+    selectExchanges: "勾选可操作的交易所",
+    selectTransTypes: "勾选可操作的交易类型",
+    saveRole: "保存角色配置",
+    deleteRole: "删除角色",
+
+    // Search & Pagination
+    search: "搜索",
+    reset: "重置",
+    prevPage: "上一页",
+    nextPage: "下一页",
+    totalItems: "共",
+    page: "页",
+
+    // Sub-Account Tabs
+    tabLoginAccts: "登录账号管理",
+    tabMMAccts: "做市账号管理",
+    tabPerms: "权限分配管理",
+
+    // Strategies
+    strategyEngine: "交易策略管理",
+    strategyDesc: "配置K线控制、盘口深度维护及非自成交刷量策略。",
+    createStrategy: "创建策略",
+    deployStrategy: "部署新策略",
+    deploy: "部署",
+    strategyModule: "策略模块",
+    tradingPair: "交易对",
+    paramsConfig: "配置",
+    start: "启动",
+    stop: "停止",
+
+    // K-Line Sub Modules
+    randomMode: "随机模式",
+    followMode: "跟随模式",
+    orderBookMode: "盘口模式",
+    priceBoundary: "价格边界控制",
+    fundingRate: "价差控制资金费率",
+    crossExchange: "跨交易所价差控制",
+
+    // Random Mode Fields
+    taskId: "任务序号",
+    account1: "交易账户1",
+    account2: "交易账户2",
+    makerPrice: "做市价格",
+    minMakerPrice: "做市最小价格",
+    maxMakerPrice: "做市最大价格",
+    volatility: "波动率",
+    maxQty: "交易最大数量",
+    minQty: "交易最小数量",
+    qtyRange: "数量范围",
+    qtyChangePeriod: "数量变化周期",
+    maxOrderInterval: "下单最大间隔(秒)",
+    minOrderInterval: "下单最小间隔(秒)",
+    orderQty: "下单数量",
+    orderInterval: "下单间隔",
+    makerPriceRange: "做市价格",
+    orderStatus: "下单状态",
+
+    // Follow Mode Fields
+    followExchange: "跟随代币交易所",
+    followPair: "跟随交易对",
+    followType: "跟随交易类型",
+    weightRatio: "权重占比",
+    followChangePeriod: "跟随变动周期(K线)",
+    weightError: "权重占比总和必须等于1",
+    
+    // Price Boundary Fields
+    floatingValue: "浮动值",
+
+    // Market
+    orderBook: "盘口数据",
+    manualTrade: "手动交易",
+    bidSide: "买盘",
+    askSide: "卖盘",
+    total: "总额",
+    amt: "数量",
+    bidPrice: "买价",
+    askPrice: "卖价",
+    buyLimit: "限价买入",
+    sellLimit: "限价卖出",
+    avail: "可用",
+    wallet: "钱包",
+    priceUSDT: "价格 (USDT)",
+    amountBTC: "数量 (BTC)",
+    buy: "买入",
+    sell: "卖出",
+    quickAction: "快捷操作",
+    cancelBids: "撤销所有买单",
+    cancelAsks: "撤销所有卖单",
+    panicSell: "一键平仓 (Panic Sell)",
+    connected: "已连接",
+    
+    // Alerts
+    logMonitor: "实时日志与报警",
+    logMonitorDesc: "查看系统实时运行日志、错误报告及风控报警。",
+    clearLogs: "清空日志",
+    level: "级别",
+    message: "消息内容",
+    time: "时间"
+  }
+};
+
+export const t = (key: keyof typeof translations['en'], lang: Language) => {
+  return translations[lang][key] || key;
+};
